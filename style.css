@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interface {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#control_panel {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#playing_field {
+    /*padding-right: 20px;*/
+    border: 2px solid grey;
+}
+buttom {
+    /*margin: 5px;*/
+    /*padding: 15px;*/
+    border: 2px solid gray;
+}
