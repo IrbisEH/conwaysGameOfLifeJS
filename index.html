@@ -4,17 +4,59 @@
     <meta charset="UTF-8">
     <title>Conway's Game of Life</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="index.js"></script>
 </head>
-<body>
-    <div class="interface">
-        <div id="playing_field"></div>
-        <div id="control_panel">
-            <h1 id="score"></h1>
-            <buttom id="start">start</buttom>
-            <buttom id="stop">stop</buttom>
-            <buttom id="reset">reset</buttom>
+    <body>
+        <div class="interface">
+            <div id="playing_field"></div>
+            <div class="control_panel">
+                <a class="title" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">
+                    <h1>Conway's game of Life</h1>
+                </a>
+                <div class="control_buttons">
+                    <button id="play">
+                        <img src="./static/play.svg">
+                    </button>
+                    <button id="stop">
+                        <img src="./static/stop.svg">
+                    </button>
+                    <button id="reset">
+                        <img src="./static/reset.svg">
+                    </button>
+                </div>
+                <div class="control_mode">
+                    <button id="mode_previous">
+                        <img src="./static/arrow-left.svg">
+                    </button>
+                    <p id="mode"></p>
+                    <button id="mode_next">
+                        <img src="./static/arrow_right.svg">
+                    </button>
+                </div>
+                <div class="statistics">
+                    <div class="generation">
+                        <p>generation:</p>
+                        <h2 id="generation"></h2>
+                    </div>
+                    <div class="living_cells">
+                        <p>living cells:</p>
+                        <h2 id="living_cells"></h2>
+                    </div>
+                </div>
+                <div class="settings">
+                    <div class="settings_block">
+                        <p>resolution</p>
+                        <input id="resolution" class="slider" type="range" min="6" max="35" value="13">
+                    </div>
+                    <div class="settings_block">
+                        <p>speed</p>
+                        <input id="speed" class="slider" type="range" min="10" max="150" value="15">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
